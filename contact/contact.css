@@ -1,0 +1,643 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(17, 1, 17);
+    overflow-x: hidden;
+}
+.container{
+    width: 100%;
+}
+header{
+    background-color: rgb(58, 20, 94);
+    display: flex;
+    top: 0;
+    left: 0;
+    animation: index 1s ease-in-out;
+}
+/* animation */
+@keyframes index{
+    0%{ transform: translateY(-100px); }
+    100%{
+        transform: translateX(0%);
+    }
+}
+
+li{
+    display: inline;
+}
+button{
+    padding: 10px;
+    background-color: black;
+}
+.topic{
+    transform: translateX(190px) translateY(-20px);
+}
+.one:hover{
+    background-color: red;
+}
+
+.anime{
+    transform: translateX(50px) translateY(20px);
+}
+.one{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    margin-left: 40px;
+    padding: 20px;
+
+}
+/* icons */
+.ico{
+    margin-left: 120px;
+    margin-right: 40px;
+}
+.m1{
+    margin-left: 20px;
+}
+/* main */
+.welcome{
+    width: 100%;
+    height: 200px;
+    /* border:  2px solid red; */
+    display: flex;
+    justify-content: center;
+}
+
+.welcome h1{
+    margin-top: 100px;
+    font-size: 60px;
+    margin-left: 30px;
+    letter-spacing: 10px;
+    text-shadow: 3px 3px 10px white;
+    animation: come 3s 1;
+}
+@keyframes come{
+    0%{
+       transform: translateY(-60px);
+       opacity: 0; 
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+.welcome h1 span{
+    text-shadow: 3px 3px 10px orange;
+}
+/* ghost */
+.welcome img{
+    height: 150px;
+    width: 150px;
+    margin-top: 20px;
+    animation: gost 2s infinite alternate-reverse;
+}
+
+@keyframes gost{
+     0%{
+       transform: translateY(-30px);
+       opacity: 0; 
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.back{
+    text-align: center;
+}
+/* main */
+.main{
+    width: 50%;
+    height: 750px;
+    border-radius: 10px;
+    padding: 30px;
+    /* border: 2px solid red; */
+    margin: 0px 25%;
+     box-shadow: 5px 5px 10px rgb(41, 99, 153),-5px -5px 10px rgb(41, 99, 153);
+     animation: dj 3s infinite;
+}
+
+@keyframes dj{
+    0%{
+        box-shadow: 5px 5px 10px rgb(150, 91, 24),-5px -5px 10px rgb(116, 29, 111);
+    }
+    25%{
+        box-shadow: 5px 5px 10px rgb(24, 41, 51),-5px -5px 10px rgb(40, 165, 29);
+    }
+    50%{
+        box-shadow: 5px 5px 10px rgb(184, 46, 46),-5px -5px 10px rgb(28, 152, 156);
+    }
+    75%{
+        box-shadow: 5px 5px 10px rgb(40, 224, 70),-5px -5px 10px rgb(146, 60, 100);
+    }
+    100%{
+        box-shadow: 5px 5px 10px rgb(41, 99, 153),-5px -5px 10px rgb(86, 153, 41);
+    }
+}
+
+/* source */
+.source{
+    color: white;
+}
+.source button{
+    background-color: orange;
+    margin-left: 20px;
+    margin-top: 20px;
+    padding: 10px 40px;
+    border: none;
+}
+.source .last{
+        text-shadow: 3px 3px 10px white;
+        letter-spacing: 5px;
+        font-size: 45px;
+        text-align: center;
+}
+.source span{
+    text-shadow: 3px 3px 10px orange;
+}
+
+
+/* second css */
+/* ========== MODERN CONTACT UI UPGRADE ========== */
+
+body{
+    background:
+    radial-gradient(circle at top,#4b0082,transparent 40%),
+    linear-gradient(135deg,#090014,#160022);
+}
+
+
+/* Modern Navbar */
+
+header{
+    background:rgba(58,20,94,0.75);
+    backdrop-filter:blur(15px);
+    position:sticky;
+    top:0;
+    z-index:100;
+    box-shadow:0 5px 25px black;
+}
+
+
+.one{
+    border-radius:25px;
+    transition:0.4s;
+}
+
+
+.one:hover{
+    background:linear-gradient(45deg,#ff8800,#ff0055);
+    box-shadow:0 0 20px orange;
+    transform:translateY(-5px);
+}
+
+
+
+/* Welcome Section */
+
+.welcome{
+    margin-top:30px;
+    background:
+    linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+    url("../images/bg.jpg");
+
+    background-size:cover;
+    border-radius:30px;
+    box-shadow:0 0 40px purple;
+}
+
+
+.welcome h1{
+    font-size:80px;
+}
+
+
+.welcome img{
+    filter:drop-shadow(0 0 20px orange);
+}
+
+
+
+/* Contact Title */
+
+.back h1{
+    font-size:45px;
+    letter-spacing:5px;
+    text-shadow:0 0 20px white;
+}
+
+
+
+/* Contact Form Glass Card */
+
+.main{
+
+    width:60%;
+    height:auto;
+    margin:40px auto;
+
+    background:
+    rgba(255,255,255,0.08);
+
+    backdrop-filter:blur(20px);
+
+    border:1px solid rgba(255,255,255,0.2);
+
+    border-radius:30px;
+
+    padding:40px;
+
+    animation:none;
+
+    box-shadow:
+    0 0 30px rgba(255,165,0,.3);
+}
+
+
+.main:hover{
+    box-shadow:
+    0 0 40px orange;
+}
+
+
+
+/* Text */
+
+.source h1{
+    color:orange;
+    text-shadow:0 0 15px orange;
+}
+
+
+.source h2{
+    color:#ddd;
+}
+
+
+.source p{
+    color:#ccc;
+    line-height:1.7;
+}
+
+
+
+/* Input Design */
+
+input,
+textarea{
+
+    width:100%;
+    padding:15px;
+
+    background:#10001b;
+
+    color:white;
+
+    border:2px solid purple;
+
+    border-radius:15px;
+
+    outline:none;
+
+    transition:.4s;
+
+}
+
+
+input:focus,
+textarea:focus{
+
+    border-color:orange;
+
+    box-shadow:0 0 20px orange;
+
+}
+
+
+
+/* Submit Button */
+
+.source button{
+
+    background:
+    linear-gradient(45deg,orange,red);
+
+    color:white;
+
+    font-size:18px;
+
+    border-radius:30px;
+
+    cursor:pointer;
+
+    transition:.4s;
+
+}
+
+
+.source button:hover{
+
+    transform:scale(1.1);
+
+    box-shadow:0 0 30px orange;
+
+}
+
+
+
+/* Thank You */
+
+.source .last{
+
+    color:white;
+
+    animation:thank 2s infinite alternate;
+
+}
+
+
+@keyframes thank{
+
+    from{
+        transform:scale(1);
+    }
+
+    to{
+        transform:scale(1.1);
+    }
+
+}
+
+
+
+/* Mobile UI */
+
+@media(max-width:600px){
+
+    .topic{
+        transform:none;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+    }
+
+
+    .anime{
+        transform:none;
+        text-align:center;
+    }
+
+
+    .welcome{
+        height:auto;
+        padding:20px;
+        flex-direction:column;
+    }
+
+
+    .welcome h1{
+        font-size:45px;
+    }
+
+
+    .back h1{
+        font-size:25px;
+    }
+
+
+    .main{
+        width:90%;
+        padding:20px;
+    }
+
+
+    .source .last{
+        font-size:35px;
+    }
+
+}
+
+/* media */
+/* ================= MEDIA QUERIES ================= */
+
+
+/* Mobile Phones (up to 575px) */
+@media (max-width:575px){
+
+    header{
+        height:auto;
+        padding-bottom:20px;
+    }
+
+    nav{
+        width:100%;
+        text-align:center;
+    }
+
+    .anime{
+        transform:none;
+        text-align:center;
+    }
+
+    .anime h1{
+        font-size:40px;
+    }
+
+    .topic{
+        transform:none;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .one{
+        font-size:18px;
+        margin:5px;
+        padding:10px;
+    }
+
+    .ico,
+    .m1{
+        margin:10px;
+    }
+
+
+    /* Welcome */
+
+    .welcome{
+        height:auto;
+        flex-direction:column;
+        padding:20px;
+    }
+
+    .welcome h1{
+        font-size:45px;
+        margin:20px 0;
+        letter-spacing:5px;
+    }
+
+    .welcome img{
+        width:120px;
+        height:120px;
+    }
+
+
+    /* Contact heading */
+
+    .back h1{
+        font-size:25px;
+        letter-spacing:2px;
+        padding:10px;
+    }
+
+
+    /* Form */
+
+    .main{
+        width:90%;
+        margin:20px auto;
+        height:auto;
+        padding:20px;
+    }
+
+    .source h1{
+        font-size:25px;
+    }
+
+    .source h2{
+        font-size:18px;
+    }
+
+    .source p{
+        font-size:14px;
+    }
+
+
+    input,
+    textarea{
+        width:100%;
+    }
+
+    textarea{
+        height:120px;
+    }
+
+
+    .source .last{
+        font-size:35px;
+    }
+
+}
+
+
+
+
+/* Mobile Landscape (576px - 767px) */
+
+@media (min-width:576px) and (max-width:767px){
+
+    .topic{
+        transform:none;
+        text-align:center;
+    }
+
+    .one{
+        font-size:18px;
+        margin:10px;
+    }
+
+
+    .welcome h1{
+        font-size:55px;
+    }
+
+
+    .main{
+        width:80%;
+        height:auto;
+    }
+
+}
+
+
+
+
+/* Tablets (768px - 991px) */
+
+@media (min-width:768px) and (max-width:991px){
+
+    .topic{
+        transform:translateX(50px);
+    }
+
+
+    .one{
+        font-size:20px;
+        margin-left:15px;
+    }
+
+
+    .welcome h1{
+        font-size:65px;
+    }
+
+
+    .main{
+        width:70%;
+        height:auto;
+    }
+
+}
+
+
+
+
+/* Laptop / Desktop (992px - 1199px) */
+
+@media (min-width:992px) and (max-width:1199px){
+
+    .topic{
+        transform:translateX(100px);
+    }
+
+
+    .main{
+        width:65%;
+    }
+
+}
+
+
+
+
+/* Large Desktop (1200px - 1399px) */
+
+@media (min-width:1200px) and (max-width:1399px){
+
+    .main{
+        width:60%;
+    }
+
+}
+
+
+
+
+/* Extra Large Screens (1400px+) */
+
+@media (min-width:1400px){
+
+    .main{
+        width:55%;
+    }
+
+    .welcome h1{
+        font-size:90px;
+    }
+
+}

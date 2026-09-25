@@ -1,0 +1,454 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+}
+.container{
+    width: 100%;
+    background-color: rgb(24, 1, 24);
+}
+header{
+    background-color: rgb(58, 20, 94);
+    display: flex;
+    top: 0;
+    left: 0;
+    animation: index 1s ease-in-out;
+}
+/* animation */
+@keyframes index{
+    0%{ transform: translateY(-100px); }
+    100%{
+        transform: translateX(0%);
+    }
+}
+li{
+    display: inline;
+}
+button{
+    padding: 10px;
+    background-color: black;
+}
+.topic{
+    transform: translateX(190px) translateY(-20px);
+}
+.one:hover{
+    background-color: red;
+}
+.anime{
+    transform: translateX(50px) translateY(20px);
+}
+.one{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    margin-left: 40px;
+    padding: 20px;
+
+}
+/* icons */
+.ico{
+    margin-left: 120px;
+    margin-right: 40px;
+}
+/* main  */
+.box1{
+    width: 100%;
+    height: 300px;
+    /* border: 2px solid red; */
+    background: black;
+    color: white;
+    text-align: center;
+    margin-top: -50px;
+}
+.box1 h1{
+    font-size: 120px;
+    margin-top: 50px;
+    letter-spacing: 5px;
+}
+.box1 h5{
+    font-size: 30px;
+    animation: smile 1s infinite alternate-reverse;
+}
+@keyframes smile{
+    0%{
+        color: red;
+        transform: translateY(20px);
+    }
+    30%{
+        color: yellow;
+    }
+    50%{
+        color: aqua;
+    }
+        70%{
+        color: orange;
+    }
+    100%{
+        color: white;
+    }
+}
+
+
+/* vide anime mation */
+/* .back{
+    width: 100%;
+    height: 300px;
+    background-image: url('../images/gif2.gif');
+    /* background-repeat: no-repeat;
+    background-size: 100% 100%; */
+
+
+    /* background-position:center; 
+    text-align: center;
+ }
+.insid{
+    transform: translateY(120px);
+    font-size: 30px;
+    color: whitesmoke;
+    animation: anime 8s infinite ease-in-out;
+}
+@keyframes anime{
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(100%);
+    }
+}
+.insid2{
+    /* transform: translateY(120px); */
+    /* font-size: 30px; 
+    color: whitesmoke;
+    animation: second 8s infinite ease-in-out; 
+ } 
+@keyframes second{
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+       transform: translateX(-100%);
+    }
+} */
+
+.log{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    color: white;
+    padding: 40px;
+}
+.login{
+    border-right: 1px solid gray;
+    text-align: right;
+    padding-right:20px ;
+}
+.login h3{
+    margin-right: 120px;
+}
+.account button{
+    background-color: orange;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.account{
+    margin-left: 20px;
+}
+.face button{
+    width: 200px;
+    color: white;
+    background-color: rgb(71, 71, 184);
+    border: none;
+    cursor: pointer;
+    display: flex;
+    margin: 0px auto;
+}
+.login p{
+    cursor: pointer;
+}
+.login input{
+    height: 30px;
+}
+.face{
+    width: 100%;
+}
+.google button{
+    width: 200px;
+    color: white;
+    background-color: rgb(197, 37, 37);
+    border: none;
+    cursor: pointer;
+    display: flex;
+    margin: 0px auto;
+}
+.google{
+    width: 100%;
+}
+.ig button{ 
+    width: 200px;
+    color: white;
+    background-color: rgb(34, 123, 150);
+    border: none;
+    cursor: pointer;
+    display: flex;
+    margin: 0px auto;
+}
+.ig{
+    width: 100%;
+}
+/* footer */
+footer{
+    background-color: rgb(58, 20, 94);
+}
+.two{
+    text-decoration: none;
+    color: gray;
+    font-size: 17px;
+    margin-left: 40px;
+    padding: 20px;
+
+}
+.last{
+    height: 50px;
+    display: flex;
+}
+.sid_last{
+    transform: translateX(900px) translateY(-60px);
+}
+
+
+/* second scc */
+
+/* ===== PREMIUM ANIME LOGIN UI ===== */
+
+body{
+    background:#0b0010;
+    font-family:'Segoe UI',sans-serif;
+}
+
+header{
+    background:rgba(58,20,94,0.75);
+    backdrop-filter:blur(15px);
+    position:sticky;
+    top:0;
+    z-index:1000;
+    box-shadow:0 5px 25px black;
+}
+
+
+.one{
+    border-radius:25px;
+    transition:.4s;
+}
+
+
+.one:hover{
+    background:linear-gradient(45deg,orange,red);
+    box-shadow:0 0 20px orange;
+    transform:translateY(-5px);
+}
+
+
+/* background welcome */
+.box1{
+    height:320px;
+    margin-top: 10px;
+    background:
+    linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.8)),
+    /* url('../images/gif2.gif'); */
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+}
+
+.box1 h1{
+    font-size:100px;
+    text-shadow:0 0 20px orange;
+}
+.box1 h5{
+    color:white;
+    font-size:22px;
+}
+
+
+/* Login container */
+
+.log{
+    width:800px;
+    margin:60px auto;
+    padding:40px;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    background:rgba(255,255,255,0.08);
+    border:1px solid rgba(255,255,255,.2);
+    border-radius:25px;
+    backdrop-filter:blur(15px);
+    box-shadow:0 0 40px rgba(255,165,0,.3);
+}
+
+
+/* Login box */
+
+.login{
+    border:none;
+    text-align:center;
+}
+
+.login p{
+    margin-left: 200px;
+    margin-top: -20px;
+}
+
+
+.login h3,
+.account h3{
+    color:white;
+    font-size:32px;
+    margin-bottom:25px;
+}
+
+
+.login input[type="email"],
+.login input[type="password"]{
+    width:320px;
+    height:50px;
+    padding:15px;
+    background:#120019;
+    color:white;
+    border:none;
+    outline:none;
+    border-radius:30px;
+    border:1px solid orange;
+}
+
+
+.login input[type="submit"]{
+    width:180px;
+    height:45px;
+    border:none;
+    border-radius:30px;
+    background:linear-gradient(45deg,orange,#ff4500)!important;
+    color:black;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.login input[type="submit"]:hover{
+    transform:scale(1.1);
+}
+
+
+.login p{
+    color:orange;
+    cursor:pointer;
+}
+
+
+/* Register section */
+
+.account{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    border-left:1px solid gray;
+}
+
+
+.account button{
+    margin-top:20px;
+    padding:15px 35px;
+    border:none;
+    border-radius:30px;
+    background:orange;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+.account button:hover{
+    background:white;
+}
+
+
+/* Social login */
+
+.face button,
+.google button,
+.ig button{
+    width:350px;
+    height:55px;
+    margin:auto;
+    border:none;
+    border-radius:30px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:15px;
+    color:white;
+    font-size:15px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+
+.face button{
+    background:#1877f2;
+}
+
+.google button{
+    background:white;
+    color:black;
+}
+
+.ig button{
+    background:#d62976;
+}
+
+
+.face button:hover,
+.google button:hover,
+.ig button:hover{
+    transform:translateY(-8px);
+    box-shadow:0 10px 20px black;
+}
+
+
+/* Responsive */
+
+@media(max-width:800px){
+
+.log{
+    width:90%;
+    grid-template-columns:1fr;
+}
+
+.account{
+    border-left:none;
+    border-top:1px solid gray;
+    margin-top:30px;
+    padding-top:30px;
+}
+
+.box1 h1{
+    font-size:60px;
+}
+
+.login input[type="email"],
+.login input[type="password"]{
+    width:90%;
+}
+
+.face button,
+.google button,
+.ig button{
+    width:80%;
+}
+
+}
